@@ -1,0 +1,65 @@
+body {
+    margin: 0;
+    height: 2000px;
+    overflow: hidden;
+}
+
+header
+{
+    right: 0;
+    position: absolute;
+}
+.homepage {
+    &__body {
+        background: url('background-home-desktop.jpg') no-repeat center center fixed;
+        background-size: cover;
+        overflow: hidden;
+        height: 2650px;
+    }
+}
+
+.text {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    color: white;
+    margin-top: 190px;
+    margin-left: 170px;
+    @include smallMobile-only{
+        margin-left: 25px;
+    }
+    @include mobile-only{
+        margin-left: 35px;
+    }
+    &__travel_to {
+            font-size: 1.350em;
+            margin-bottom: -130px;
+            @include smallMobile-only{
+                font-size: 0.9em;
+                margin-bottom: -90px;
+            }
+            @include mobile-only{
+                font-size: 1em;
+                margin-bottom: -100px;
+            }
+        }
+        &__space {
+            margin-bottom: 20px;
+            font-size: 9em;
+            @include smallMobile-only{
+                font-size: 6em;
+            }
+            @include mobile-only{
+                font-size: 7em;
+            }
+        }
+        &__text {
+            width: 340px;
+            @include smallMobile-only{
+                width: 270px; 
+            }
+            @include mobile-only{
+                width: 320px;   
+            }
+        }
+}

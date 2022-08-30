@@ -1,0 +1,11 @@
+$color-primary: white;
+$color-secondary: rgb(170, 170, 170);
+
+$breakpoints: (
+    mobileMax: 450px,
+    mobileMin: 351px,
+    allMobile: 450px,
+    smallMobile: 350px,
+    tabletMin: 450px,
+    tabletMax: 1200px
+)

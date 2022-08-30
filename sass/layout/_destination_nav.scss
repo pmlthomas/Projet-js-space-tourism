@@ -1,0 +1,20 @@
+.destination {
+    &__ul {
+    list-style-type: none;
+    display: flex;
+    padding-left: 0;
+    margin-bottom: -32px;
+    margin-top: 75px;
+        & li {
+            font-size: 1.3em;
+            padding-right: 25px;
+            &:hover {
+                cursor: pointer;
+            }  
+        }
+    }  
+    &__li--active {
+        text-decoration: underline;
+        text-underline-offset: 10px;
+    } 
+}

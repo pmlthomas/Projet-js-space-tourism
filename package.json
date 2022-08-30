@@ -1,0 +1,22 @@
+{
+  "name": "projet-js-space-tourism",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "sass": "sass --watch ./sass/main.scss:./public/assets/css/style.css --style compressed",
+    "start": "browserify ./index.js > ./dist/bundle.js -d",
+    "watch": "watchify ./index.js -o ./dist/bundle.js -d -v"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "animejs": "^3.2.1",
+    "jquery": "^3.6.0"
+  },
+  "devDependencies": {
+    "webpack": "^5.74.0",
+    "webpack-cli": "^4.10.0"
+  },
+  "main": "index.js",
+  "description": ""
+}

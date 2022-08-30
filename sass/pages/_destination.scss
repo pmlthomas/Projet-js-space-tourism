@@ -1,0 +1,121 @@
+.destination {
+    &__bloc {
+        display: flex;
+        background: url('/public/assets/images/destination/background-destination-desktop.jpg') no-repeat center center fixed;
+        background-size: cover;
+        overflow: hidden;
+        height: 2650px;
+        @include allMobile-only {
+            display: flex;
+            width: 450px;
+        }
+        @include tablet-only {
+            display: flex;
+            width: 100%;
+        }
+    }
+    &__page {
+        margin-top: 140px;
+        display: flex;
+        width: 1560px;
+        justify-content: space-around;
+        @include allMobile-only {
+            width: 450px;
+            margin-top: 250px;
+            margin-left: 110px;
+        }
+        @include tablet-only {
+            width: 100%;
+            margin-top: 250px;
+            margin-left: 70px;
+        }
+    }
+    &__page--left {
+        display: flex;
+        width: 1560px;
+        justify-content: flex-start;
+        margin-left: 135px;
+        @include allMobile-only {
+            margin-right: -140px;
+        }
+        @include tablet-only {
+            margin-right: -140px;
+        }
+    }
+    &__page--right {
+        display: flex;
+        width: 1560px;
+        justify-content: flex-end;
+        margin-right: 470px;
+        @include allMobile-only {
+            margin-top: -135px;
+        }
+        @include tablet-only {
+            margin-top: -100px;
+        }
+    }
+    &__left {
+        display: flex;
+        flex-direction: column;
+        margin-right: -200px;
+        margin-left: 70px;
+         & h2 {
+            color: white;
+            margin-left: -30px;
+            margin-bottom: 50px;
+            @include allMobile-only {
+                margin-top: -135px;
+                margin-left: 10px;
+            }
+            @include tablet-only {
+                margin-top: -100px;
+                margin-left: 150px;
+            }
+         }
+         & img {
+            height: 350px;
+            @include allMobile-only {
+                margin-bottom: -700px;
+            }
+            @include tablet-only {
+                margin-bottom: -700px;
+                margin-left: 190px;
+            }
+         }
+    }
+    &__right {
+        display: flex;
+        flex-direction: column;
+    }   
+    &__text {
+        color: white;
+            }
+            &__planet {
+                font-size: 5em;
+                margin-bottom: 10px;
+            }
+            &__text {
+                width: 360px;
+    }
+    &__stats {
+        display: flex;
+        color: white;
+        margin-top: 15px;
+            &--left {
+                display: flex;
+                flex-direction: column;
+                margin-right: 70px;
+            }
+            &--right {
+                display: flex;
+                flex-direction: column;
+            }
+            &--top {
+                font-size: 0.8em;
+                margin-bottom: -15px;
+            }
+            &--bottom {
+                font-size: 1.5em;
+            }
+    }
+}

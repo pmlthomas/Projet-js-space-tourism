@@ -1,0 +1,100 @@
+.tech {
+    &__page {
+        background: url('/public/assets/images/technology/background-technology-desktop.jpg');
+        display: flex;
+        height: 2700px;
+        overflow: hidden;
+        justify-content: center;
+    }
+    &__bloc {
+        width: 2000px;
+        display: flex;
+        flex-direction: column;
+        margin-top: 280px;
+    }
+    &__bloc--text {
+        display: flex;
+        justify-content: space-around;
+        margin-left: -380px;
+    }
+    &__03 {
+        position: fixed;
+        color: $color-primary;
+        font-size: 1.3em;
+        margin-left: -200px;
+        margin-top: 150px;
+        width: 700px;
+    }
+    &__numbers {
+        display: flex;
+        flex-direction: column;
+        color: $color-primary;
+        position: fixed;
+        left: 0;
+        margin-left: 130px;
+        margin-top: -20px;
+            & div{
+                cursor: pointer;
+                line-height: 10px;
+                padding: 20px;
+                margin-bottom: -40px;
+                border: 1px solid white;
+                border-radius: 50%; 
+                text-align: center;
+            }
+            &--active {
+                cursor: pointer;
+                line-height: 10px;
+                padding: 20px;
+                margin-bottom: -40px;
+                border: 1px solid white;
+                border-radius: 50%; 
+                text-align: center;
+                background-color: white;
+                color: black;
+            }
+            &--2 {
+                margin-right: 50px;
+            }
+    } 
+    &__text {
+        position: fixed;
+        margin-left: -70px;
+        color: $color-primary;
+            &--subtitle {
+                font-size: 0.8em;
+                color: $color-secondary;
+                margin-bottom: -12px;
+            }
+            &--text {
+                width: 310px;
+                color: $color-primary;
+            }
+    }
+    &__img--1 {
+        & img {
+            height: 370px;
+            position: fixed;
+            margin-top: -60px;
+            right: 0;
+        }
+    }
+    &__img--2 {
+        & img {
+            height: 380px;
+            width: 650px;
+            position: fixed;
+            margin-top: -60px;
+            right: 0;
+        }
+    }
+    &__img--3 {
+        & img {
+            height: 370px;
+            width: 600px;
+            position: fixed;
+            margin-top: -60px;
+            right: 0;
+        }
+    }
+}
